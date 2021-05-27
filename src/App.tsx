@@ -92,7 +92,7 @@ function App() {
                 'dacia'
             ],
             pts: 36,
-            description: "<img src=https://i2.wp.com/thinkmarketingmagazine.com/wp-content/uploads/2012/08/bmw-logo.png?ssl=1 /> te var rakstit talak ari parastu tekstu var iebazt <span>yay span</span>, strong ielikt <strong>strong text</strong>",
+            description: "<img src=https://i2.wp.com/thinkmarketingmagazine.com/wp-content/uploads/2012/08/bmw-logo.png?ssl=1 width=128 height=128>",
             correctAnswers: [
                 4
             ]
@@ -114,10 +114,11 @@ function App() {
           { startTest && <Quiz data={data} /> }
           { !startTest &&
           <div className={clsx('App-Introduction')}>
-              <div>Take the quiz</div>
-              <div>Whenever, you want</div>
-              <div>{`Time limit ${TIME}min`}</div>
-              <button className={clsx('App-StartButton')} onClick={ ()=> setStartTest(true) }>Sakt TESTU</button>
+              <div>Sveicināti!</div>
+			  <div>Testa tēma: automašīnas</div>
+              <div>Test sastāv no 20 jautājumiem</div>
+              <div>{`Laika ierobežojums uz visu testu: ${TIME} minūtes`}</div>
+              <button className={clsx('App-StartButton')} onClick={ ()=> setStartTest(true) }>Sākt testu</button>
           </div>
           }
       </header>

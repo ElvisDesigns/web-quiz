@@ -1,7 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:900');
+
+$bg: #fff;
+$text: #382b22;
+$light-pink: #fff0f0;
+$pink: #ffe9e9;
+$dark-pink: #f9c4d2;
+$pink-border: #b18597;
+$pink-shadow: #ffe3e2;
+
+$white: #fff;
+$black: #202121;
+
+@mixin transition($property: all, $duration: 0.5s, $ease: cubic-bezier(0.65,-0.25,0.25, 1.95)) {
+  transition: $property $duration $ease;
+}
+
+* {
+  box-sizing: border-box;
+  &::before, &::after {
+    box-sizing: border-box;
+  }
+}
+
 .App {
   &-Introduction {
     font-size: 25px;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 50px;
   }
 }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  min-height: 100vh;
+  background: $bg;
+}
+
+.App-StartButton {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: inherit;
+  font-family: inherit;
+}
+
