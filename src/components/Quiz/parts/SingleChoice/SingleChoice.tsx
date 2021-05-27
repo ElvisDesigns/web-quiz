@@ -1,3 +1,4 @@
+/* eslint-disable */
 import {FC} from 'react';
 import {QuizQuestion} from "../../../../@types/global";
 import {useAppSelector, useAppDispatch} from '../../../../app/hooks';
