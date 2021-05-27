@@ -1,0 +1,65 @@
+.SingleChoice {
+  &-Wrapper {
+    margin: 20px;
+    border: 1px solid black;
+    padding: 20px;
+
+    &_isRed {
+      border: 3px solid red;
+    }
+  }
+
+  &-QuestionTitle {
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+  }
+
+  &-Description {
+    margin: 20px 0;
+  }
+
+  &-AnswersWrapper {
+    display: flex;
+    flex-direction: column;
+
+    &_isImage {
+      flex-direction: row;
+      gap: 20px;
+    }
+  }
+
+  &-Pts {
+    display: inline-block;
+    float: right;
+  }
+
+  &-Answer {
+    img {
+      padding: 5px;
+      width: 250px;
+    }
+
+    &_isRed {
+      background-color: red;
+    }
+
+    &_isGreen {
+      background-color: green;
+    }
+
+    &_isImage {
+      input {
+        display: none;
+      }
+
+      .SingleChoice-Label {
+        border: 2px solid transparent;
+
+        &_isSelected {
+          border: 2px solid purple;
+        }
+      }
+    }
+  }
+}

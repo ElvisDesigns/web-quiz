@@ -1,0 +1,43 @@
+.Text {
+  &-Wrapper {
+    margin: 20px;
+    border: 1px solid black;
+    padding: 20px;
+
+    &_isRed {
+      border: 3px solid red;
+    }
+  }
+
+  &-QuestionTitle {
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+  }
+
+  &-Description {
+    margin: 20px 0;
+  }
+
+  &-Pts {
+    display: inline-block;
+    float: right;
+  }
+
+  &-AnswersWrapper {
+    display: flex;
+    flex-direction: column;
+
+    &_isRed {
+      background-color: red;
+    }
+
+    &_isGreen {
+      background-color: green;
+    }
+  }
+
+  &-Answer {
+
+  }
+}

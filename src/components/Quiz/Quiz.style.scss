@@ -1,0 +1,18 @@
+.Quiz {
+  &-Message,
+  &-Timer{
+    text-align: center;
+    width: 100%;
+    font-size: 30px;
+    color: green;
+  }
+
+  &-Button {
+    margin: auto;
+    text-align: center;
+    color: blue;
+    display: flex;
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+}
