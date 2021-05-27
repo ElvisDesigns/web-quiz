@@ -43,14 +43,26 @@ body {
 }
 
 .App-StartButton {
-  position: relative;
-  display: inline-block;
+  display:inline-block;
   cursor: pointer;
-  outline: none;
-  border: 0;
-  vertical-align: middle;
-  text-decoration: none;
-  font-size: inherit;
-  font-family: inherit;
+  padding:0.3em 1.2em;
+  margin:0 0.3em 0.3em 0;
+  border-radius:2em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  color:#FFFFFF;
+  font-size: 20px;
+  background-color:#4eb5f1;
+  text-align:center;
+  transition: all 0.2s;
 }
-
+.App-StartButton:hover{
+  background-color:#4095c6;
+}
+@media all and (max-width:30em){
+  .App-StartButton {
+    display:block;
+    margin:0.2em auto;
+  }
+}
