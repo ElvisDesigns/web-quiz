@@ -24,9 +24,25 @@ function App() {
             ]
         },
 		{
+            type: SINGLE_SELECT,
+            question: 'Kādā krāsā tika ražotas visas Ferrari mašīnas oriģināli?',
+            name: 'krasinas', // katram jautajumam sim jabut ir unikalam, pec taa tiek viss skatit
+            answers: [
+                'Baltā',
+                'Sarkanā',
+                'Dzeltenā',
+                'Zilā'
+            ],
+            pts: 0.5,
+			description: "Starptautiskā Automobiļu federācija Grand Prix dēļ piešķīra sacīkšu auto šo krāsu",
+            correctAnswers: [
+                1
+            ]
+        },
+		{
             type: TEXT_FIELD,
             question: 'Uzrakstiet populārāko luksus mašīnu marku?',
-            name: 'ford_dibina',
+            name: 'luksus',
             pts: 5,
             description: "Šī marka ir pirmajā vietā pasaulē un ir no Anglijas",
             correctAnswers: [
