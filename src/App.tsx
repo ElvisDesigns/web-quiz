@@ -24,6 +24,18 @@ function App() {
             ]
         },
 		{
+            type: TEXT_FIELD,
+            question: 'Uzrakstiet populārāko luksus mašīnu marku?',
+            name: 'ford_dibina',
+            pts: 5,
+            description: "Šī marka ir pirmajā vietā pasaulē un ir no Anglijas",
+            correctAnswers: [
+                'Bentley',
+				'bentley',
+				'BENTLEY'
+            ]
+        },
+		{
             type: IMAGE_SINGLE_SELECT,
             question: 'Atzīmējiet pirmo masveida ražoto automašīnu!',
             name: 'pirma_masveida',
@@ -207,6 +219,22 @@ function App() {
             description: "<img src=https://i2.wp.com/thinkmarketingmagazine.com/wp-content/uploads/2012/08/bmw-logo.png?ssl=1 width=128 height=128>",
             correctAnswers: [
                 4
+            ]
+        },
+				{
+		    type: SINGLE_SELECT,
+            question: 'Kāds dzīvnieks tiek attēlots redzamajā logotipā?',
+            name: 'logodzivniecins',
+            answers: [
+                'Bullis',
+				'Zirgs',
+				'Lauva',
+				'Puitns'
+            ],
+            pts: 0.5,
+            description: "<img src=https://lezebre.lu/images/detailed/79/45326-Sticker-Porsche-Logo.png width=256 height=256>",
+            correctAnswers: [
+                1
             ]
         },
         {

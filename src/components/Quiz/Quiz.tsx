@@ -139,6 +139,7 @@ const Quiz: FC<QuizProps> = ({data}) => {
 
     return (
         <div>
+			<div className={clsx('Quiz-Timer')}>Atlikušais laiks</div>
             <div className={clsx('Quiz-Timer')}>{`${Math.floor(timeLeft / 1000 / 60)}:${(timeLeft / 1000) - (Math.floor(timeLeft / 1000 / 60) * 60)}`}</div>
             <div className={clsx('Quiz-Message')}>{message}</div>
             {data.map(question => declaration(question)[question.type])}
