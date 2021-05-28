@@ -24,6 +24,21 @@ function App() {
             ]
         },
 		{
+            type: IMAGE_SINGLE_SELECT,
+            question: 'Atzīmējiet pirmo masveida ražoto automašīnu!',
+            name: 'pirma_masveida',
+            answers: [
+                'https://lh3.googleusercontent.com/I79nUX6RraV283jiG_QtZONeZ082jS-aXWJwV4DGjOmqAHd95jsm8sMKV5cjJjEk',
+				'https://vintagemotorcars.files.wordpress.com/2012/06/v8.jpg',
+				'https://lh3.googleusercontent.com/Iu3Ev5JDUzCGu6ouuJPeb-dCgXqRjnXuqymG4S3CVok6jqWMoBNfSmeWtX99rRrB5Q',
+				'https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Late_model_Ford_Model_T.jpg/200px-Late_model_Ford_Model_T.jpg'
+            ],
+            pts: 2,
+            correctAnswers: [
+                3
+            ]
+        },
+		{
             type: TEXT_FIELD,
             question: 'Kā sauc Ford kompānijas dibinātaju?',
             name: 'ford_dibina',
