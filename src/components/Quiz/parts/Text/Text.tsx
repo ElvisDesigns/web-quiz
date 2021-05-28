@@ -14,7 +14,7 @@ export interface TextProps {
 }
 
 const Text: FC<TextProps> = ({question, incompleteAnswers}) => {
-    const text = 'Ierakstit atbildi:';
+    const text = 'Ierakstiet atbildi:';
     const {question: quizQuestion, description = '', pts, name, correctAnswers} = question;
     const storeAnswer = useAppSelector(getAnswers)?.[name] as string || '';
     const submittedAnswers = useAppSelector(getShowAnswers);

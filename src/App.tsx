@@ -265,6 +265,19 @@ function App() {
                 1
             ]
         },
+		{
+            type: TEXT_FIELD,
+            question: 'Kā sauc pasaulē slavenās elektromobīļu Tesla kompānijas dibinātāju?',
+            name: 'dogecoindievs_masks',
+            pts: 5,
+			description: "<img src=https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Elon_Musk_2015.jpg/225px-Elon_Musk_2015.jpg width=225 height=330>",
+            correctAnswers: [
+                'Īlons Masks',
+				'Masks',
+				'Īlons',
+                'Masks Īlons'
+            ]
+        },
         {
             type: TEXT_FIELD,
             question: 'Nosauciet kompāniju / brendu, kuram logotips ir 4 pārklājoši apļi?',
