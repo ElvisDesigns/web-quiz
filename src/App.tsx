@@ -80,6 +80,18 @@ function App() {
             ]
         },
 		{
+            type: TEXT_FIELD,
+            question: 'Uzrakstiet populārāko luksus mašīnu marku?',
+            name: 'detalinas',
+            pts: 5,
+            description: "Šī marka ir pirmajā vietā pasaulē un ir no Anglijas",
+            correctAnswers: [
+                'Bentley',
+				'bentley',
+				'BENTLEY'
+            ]
+        },
+		{
             type: SINGLE_SELECT,
             question: 'Ko nozīmē abriviatūra ABS?',
             name: 'abs_jautajums', // katram jautajumam sim jabut ir unikalam, pec taa tiek viss skatits
@@ -187,7 +199,7 @@ function App() {
             answers: [
                 'https://carsguide-res.cloudinary.com/image/upload/f_auto,fl_lossy,q_auto,t_cg_hero_large/v1/editorial/story/hero_image/2019-Porsche-911-coupe-red-press-image-1001x565p-%281%29.jpg',
 				'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2Fyc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80',
-				'https://cdn1.buyacar.co.uk/sites/buyacar/files/styles/w860/public/vauxhall-corsa20-11.jpg?itok=NKrpS1jU',
+				'https://d1hv7ee95zft1i.cloudfront.net/custom/blog-post-photo/gallery/5a6adcace24e6.jpg',
 				'https://cdn.motor1.com/images/mgl/AovXy/s3/ferrari-laferrari-aperta.webp'
 			],
             pts: 3,
@@ -245,7 +257,7 @@ function App() {
                 'Bullis',
 				'Zirgs',
 				'Lauva',
-				'Puitns'
+				'Putns'
             ],
             pts: 0.5,
             description: "<img src=https://lezebre.lu/images/detailed/79/45326-Sticker-Porsche-Logo.png width=256 height=256>",
