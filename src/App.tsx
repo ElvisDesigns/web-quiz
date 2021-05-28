@@ -41,8 +41,8 @@ function App() {
         },
 		{
             type: TEXT_FIELD,
-            question: 'Uzrakstiet populārāko luksus mašīnu marku?',
-            name: 'luksus',
+            question: 'Uzrakstiet populārāko luksus mašīnu marku!',
+            name: 'jautjaumins',
             pts: 5,
             description: "Šī marka ir pirmajā vietā pasaulē un ir no Anglijas",
             correctAnswers: [
@@ -79,16 +79,21 @@ function App() {
 				'fords henrijs'
             ]
         },
-		{
-            type: TEXT_FIELD,
-            question: 'Uzrakstiet populārāko luksus mašīnu marku?',
-            name: 'detalinas',
-            pts: 5,
-            description: "Šī marka ir pirmajā vietā pasaulē un ir no Anglijas",
+        {
+            type: MULTI_SELECT,
+            question: 'Kādi taksometri ir Rīgā?',
+            name: 'jautinasd',
+            answers: [
+                'Rīgas satiksme',
+                'Bolt Taxi',
+				'Yandex Taxi',
+				'Baltic Taxi',
+				'Fake Taxi',
+                'Panda Taxi'
+            ],
+            pts: 4.5,
             correctAnswers: [
-                'Bentley',
-				'bentley',
-				'BENTLEY'
+                1,2,3,5
             ]
         },
 		{
