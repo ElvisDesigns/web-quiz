@@ -15,7 +15,7 @@ export interface MultiChoiceProps {
 }
 
 const MultiChoice: FC<MultiChoiceProps> = ({question, isImage, incompleteAnswers}) => {
-    const text = 'Atzimejiet vienu vai vairakas';
+    const text = 'Atzimejiet vienu vai vairakas:';
     const {question: quizQuestion, description = '', pts, answers = [], name, correctAnswers} = question;
     const storeAnswer = useAppSelector(getAnswers)?.[name] as number[] || [];
     const submittedAnswers = useAppSelector(getShowAnswers);

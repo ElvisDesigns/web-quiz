@@ -18,7 +18,7 @@ export interface declarationType {
     [name: string]: JSX.Element
 }
 
-export const TIME = 15; //laiks minutes
+export const TIME = 25; //laiks minutes
 
 const Quiz: FC<QuizProps> = ({data}) => {
     const [stateIncompleteAnswers, setIncompleteAnswers] = useState<string[]>([]);
@@ -123,7 +123,7 @@ const Quiz: FC<QuizProps> = ({data}) => {
         setIncompleteAnswers([])
         dispatch(setShowAnswers(true));
         dispatch(setCorrectPoints(calculatePoints()))
-        setMessage(`Apsveicam, Jūs ieguvāt ${gottenPoints(calculatePoints())} no ${totalPoints()} punktiem`)
+        setMessage(`Jūs ieguvāt ${gottenPoints(calculatePoints())} no ${totalPoints()} punktiem`)
         window.scrollTo(0, 0);
     }
 
@@ -142,7 +142,7 @@ const Quiz: FC<QuizProps> = ({data}) => {
             <div className={clsx('Quiz-Timer')}>{`${Math.floor(timeLeft / 1000 / 60)}:${(timeLeft / 1000) - (Math.floor(timeLeft / 1000 / 60) * 60)}`}</div>
             <div className={clsx('Quiz-Message')}>{message}</div>
             {data.map(question => declaration(question)[question.type])}
-            <button className={clsx('Quiz-Button')} onClick={onQuizButtonClick}>{ !submittedAnswers ? 'NODOT TESTU' : 'SĀKT TESTU NO JAUNA?'}</button>
+            <button className={clsx('Quiz-Button')} onClick={onQuizButtonClick}>{ !submittedAnswers ? 'PABEIGT TESTU' : 'SĀKT TESTU NO JAUNA?'}</button>
         </div>
     )
 }

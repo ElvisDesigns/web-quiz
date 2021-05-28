@@ -15,7 +15,7 @@ export interface SingleChoiceProps {
 }
 
 const SingleChoice: FC<SingleChoiceProps> = ({question, isImage, incompleteAnswers}) => {
-    const text = 'Atzimejiet vienu';
+    const text = 'Atzimejiet vienu:';
     const {question: quizQuestion, description = '', pts, answers = [], name, correctAnswers} = question;
     const storeAnswer = useAppSelector(getAnswers)?.[name];
     const submittedAnswers = useAppSelector(getShowAnswers);
