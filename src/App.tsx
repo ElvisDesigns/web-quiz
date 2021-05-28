@@ -299,7 +299,7 @@ function App() {
           <div className={clsx('App-Introduction')}>
               <div>Sveicināti!</div>
 			  <div>Testa tēma: automašīnas</div>
-              <div>Test sastāv no 20 jautājumiem</div>
+              <div>Tests sastāv no 20 jautājumiem</div>
               <div>{`Laika ierobežojums uz visu testu: ${TIME} minūtes`}</div>
               <button className={clsx('App-StartButton')} onClick={ ()=> setStartTest(true) }>Sākt testu</button>
           </div>
